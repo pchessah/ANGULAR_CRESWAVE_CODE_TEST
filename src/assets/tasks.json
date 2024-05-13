@@ -1,0 +1,20 @@
+[
+  {
+    "id": "3b6d9e21-4f87-4a9d-b12e-3dc74e18c8f3",
+    "title": "Task 1",
+    "description": "Description 1",
+    "status": "INCOMPLETE"
+  },
+  {
+    "id": "a4c7e2d3-1f80-4b2a-9d5e-7c3a9e8b0f24",
+    "title": "Task 2",
+    "description": "Description 2",
+    "status": "COMPLETED"
+  },
+  {
+    "id": "6f1e8d9c-2a40-4b6c-a87d-5e3c9a1b7f8e",
+    "title": "Task 3",
+    "description": "Description 3",
+    "status": "INCOMPLETE"
+  }
+]
