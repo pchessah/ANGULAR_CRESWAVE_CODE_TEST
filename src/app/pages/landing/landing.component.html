@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <button (click)="addTask()" mat-flat-button color="primary">Add new task</button>
+  </div>
+  
+  @if (isMobile) {
+    <app-tasks-list></app-tasks-list>
+  } @else {
+    <app-tasks-table></app-tasks-table>
+  }
+</div>
