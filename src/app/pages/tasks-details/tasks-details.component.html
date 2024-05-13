@@ -1,0 +1,25 @@
+<ng-container *ngIf="call$ | async"></ng-container>
+
+<div class="container" *ngIf="task$ | async as task">
+  <div class="header">
+    <button (click)="goToLanding()" mat-icon-button class="home-button">
+      <mat-icon>home</mat-icon>
+    </button>
+  </div>
+  <div class="task-card">
+    <span class="task-id">Task ID: {{ task.id }}</span>
+    <h2 class="task-title">{{ task.title }}</h2>
+    <p class="task-description">{{ task.description }}</p>
+    <div class="task-status" [ngClass]="task.status === taskStatus.COMPLETED ? 'status-complete' : 'status-incomplete'">
+      {{ task.status }}</div>
+  </div>
+
+  <div class="button-container">
+    <button (click)="editTask(task)" mat-icon-button class="edit-button">
+      <mat-icon>edit</mat-icon>
+    </button>
+    <button (click)="deleteTask(task.id)" mat-icon-button class="delete-button">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
+</div>
