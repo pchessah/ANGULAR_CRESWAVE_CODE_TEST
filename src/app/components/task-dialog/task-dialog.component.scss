@@ -1,0 +1,28 @@
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 100%;
+}
+
+.container {
+  padding: 2em;
+}
+
+.title {
+  width: 100%;
+  padding: 1em 0;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
